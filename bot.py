@@ -115,8 +115,8 @@ async def check_unanswered():
     global notified
 
     now = datetime.now(timezone.utc)
-    check_before = now - timedelta(hours=24)
-    check_after = now - timedelta(hours=48)
+    check_before = now - timedelta(hours=1)
+    check_after = now - timedelta(hours=10)
 
     mapping = load_mapping()
 
